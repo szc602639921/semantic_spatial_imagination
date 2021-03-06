@@ -1,0 +1,7 @@
+
+[submodule "environment/habitat/habitat-sim"]
+	path = environment/habitat/habitat-sim
+	url = git@github.com:szc602639921/habitat-sim.git
+[submodule "environment/habitat/habitat-lab"]
+	path = environment/habitat/habitat-lab
+	url = git@github.com:szc602639921/habitat-lab.git
