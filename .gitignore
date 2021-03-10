@@ -1,0 +1,9 @@
+**/__pycache__/
+.vscode/
+log/
+data
+tb/
+docs/
+tools/mit_semseg/ckpt/
+examples
+test/
