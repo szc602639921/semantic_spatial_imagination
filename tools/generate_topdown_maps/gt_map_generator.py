@@ -24,6 +24,7 @@ from tools.generate_topdown_maps.utils import (
     map_ego_to_global,
     pos_real_to_map,
 )
+from semantic_utils.common import safe_mkdir
 
 class DummyRLEnv(habitat.RLEnv):
     def __init__(self, config, dataset=None, env_ind=0):
@@ -47,12 +48,6 @@ class DummyRLEnv(habitat.RLEnv):
 
     def get_env_ind(self):
         return self._env_ind
-
-def safe_mkdir(path):
-    try:
-        os.mkdir(path)
-    except:
-        pass
 
 def get_episode_map(env:habitat.RLEnv, mapper:Mapper, M:int, config:CN, device:torch.device):
     """Given the environment and the configuration, compute the global

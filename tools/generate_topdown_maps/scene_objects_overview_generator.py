@@ -6,7 +6,6 @@ import argparse
 import habitat
 import habitat_extensions
 import tqdm
-import habitat_sim
 from config.default import get_config
 
 from tools.generate_topdown_maps.gt_map_generator import DummyRLEnv, get_items_list
